@@ -1,0 +1,117 @@
+/* regla universal del padding y el margin */ 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*importacion de la fuente Arimo*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*BACKGROUND*/
+body {
+    background-color: #a36fd4;
+}
+/*HEADER*/
+.headerh1{
+font-family: "Arimo", sans-serif;
+color: #0a0113;
+font-size: 50px;
+}
+.imagentripandart {
+    width: 5rem;
+}
+/* LISTA DE MENU */
+.menunavegacion {
+    list-style: none;
+    text-decoration: none;
+
+}
+/*MAIN*/
+h1 {
+    font-family: "Arimo", sans-serif;
+    font-size: 32px;
+    color: #383733;
+}
+h2 {
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    color: indigo;
+}
+p {
+    font-family: "Arimo", sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+a {
+    text-decoration: none;
+}
+
+.navbar {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.indexcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.indexcard article {
+    border: solid 1px #000000;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px;
+}
+.cardindex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+.cardindex article {
+    border: solid 1px #000000;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px;
+}
+
+@media only screen and (min-width: 1024px){
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;           
+            padding: 16px 32px;
+            gap: 20px;
+            } 
+        .menunavegacion{
+            list-style: none;
+            text-decoration:none;
+            display: flex; 
+            flex-direction: row;                
+            gap: 24px;                     
+            margin: 0;
+            padding: 0;
+            }
+        .cardindex {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+}
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr auto;
+    gap: 10px;
+    width: 80%;
+    height: 80vh;
+    grid-template-areas: 
+        "navbar"
+        "main"
+        "footer";
+
+}
